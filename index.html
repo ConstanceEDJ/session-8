@@ -38,6 +38,7 @@
           </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item" v-for="experience in experiences">
+              <img :src="experience.logo" class="img-fluid col-3">
               <div class="clearfix">
                 <span class="badge badge-dark float-right" v-if="experience.dateEnd">{{ experience.dateBegin }} - {{ experience.dateEnd }}</span>
                 <span class="badge badge-dark float-right" v-else>{{ experience.dateBegin }}</span>
@@ -54,6 +55,7 @@
           </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item" v-for="formation in formations">
+              <img :src="formation.logo" class="img-fluid col-3">
               <div class="clearfix">
                 <span class="badge badge-dark float-right" v-if="formation.dateEnd">{{ formation.dateBegin }} - {{ formation.dateEnd }}</span>
                 <h5>{{ formation.university }}</h5>
